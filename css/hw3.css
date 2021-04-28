@@ -1,64 +1,98 @@
-* {
+html{
     box-sizing: border-box;
-    font-size: 14px;
-}    
-.header-main {
-    text-align: center;
-    margin-bottom: 100px;
-
 }
-.header-list {
-    margin: 0px;
-    padding: 0px;
-}
-.header-item {
-    display: inline-block;
-    margin-left: 123px;
-    margin-top: 77px;
-    
-}
-.header-item a {
-    text-decoration: none;
-    color: #626262;
-    text-transform: uppercase;
-    font-size: 14px;
-}
-.header-item a:hover {
-    color: #03a9f4;
-}
-main {
-    text-align: center;
-}
-.main-list {
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
-    background-color: grey;
+*, 
+*::before,
+*::after{
+    box-sizing: inherit;
+} 
+.container{
     width: 900px;
-    display: inline-block;
+    margin:0 auto;
 }
-.main-item {
-    display: inline-block;
-    /* margin-left: 60px; */
-    /* margin-bottom: 135px; */
-    width: 420px;
-    height: 480px;
-    overflow: hidden;
+body{
+    font-size: 14px;
+    color: #626262;
+    font-family: 'Playfair Display', serif;
 }
-figcaption {
-    text-align: left;
-    margin: 30px 0px 25px;
+.header{
+    margin-top: 72px;
+    margin-bottom: 104px;
+}
+.header-list{
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+    text-align: center;
+}
+.header-item{
+    display: inline-block;
     text-transform: uppercase;
-    color: #b4ad9e;
-}
-.main-heading {
-    text-align: left;
-    font-size: 30px;
-    color: #626262;
-    margin-bottom: 25px;    
-}
-.main-text {
-    text-align: left;
-    color: #626262;
     line-height: 24px;
 }
+.header-item:not(:last-child){
+    margin-right: 124px;   
+}
+.header-link{
+    text-decoration: none;
+    color: #626262;
+}
+.header-link:hover,
+.header-link:focus{
+    color: #03a9f4;
+}
+.main-list{
+    list-style-type: none;
+    font-size: 0;
+}
+.main-list{
+    padding:0;
+}
+.main-item{
+    display: inline-block;
+    width: 420px;
+    font-size: 14px;
+}
+.main-item:not(:nth-child(2n)){
+    margin-right: 60px;
+}
+.main-item:not(:nth-last-child(-n + 2)){
+    margin-bottom: 130px;
+}
+figcaption{
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    margin-top: 16px;
+}
+h2{
+    font-size: 30px;
+    margin: 34px 0 0;
+}
+p{
+    margin-top: 14px;
+    line-height: 24px;
+}
+button{
+    display: block;
+    border: 1px solid rgb(98, 98, 98);
+    min-width: 162px;
+    padding: 20px 34px;
+    margin: 60px auto 70px;
+    background-color: #fff;   
+    cursor: pointer; 
+    font-size: 20px;
+    line-height: 24px;
+}
+button:hover,
+button:focus{
+    color: #03a9f4;
+}
+
+
+
+
+
+
+
+
+
