@@ -44,8 +44,6 @@ body{
 .main-list{
     list-style-type: none;
     font-size: 0;
-}
-.main-list{
     padding:0;
 }
 .main-item{
