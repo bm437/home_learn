@@ -1,0 +1,183 @@
+/* питання по дз: 
+    1.макет розмічений дивно, тому не все піксель в піксель.
+    2.чому в макеті висота стрічки менша від розміру тексту? (залишав авто)
+    3.що означає мінусове значення "-20" у відступі між літерами? (залишав авто) */
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 1120px;
+    margin: 0 auto;
+    font-size: 14px;
+    padding-top: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img{
+    display: block;
+}
+.clearfix{
+    display: table;
+    clear: both;
+    content:'';
+}
+/* header */
+.header{
+    display: block;
+    margin-bottom: 100px;
+}
+.site-logo{
+    display: inline-block;
+}
+
+.header-nav{
+    float: right;
+    padding-top: 7px;
+}
+.header-list{
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+.header-item{
+    float: left; 
+}
+.header-link{
+    color: #0f0101;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+.header-link:hover{
+    color: #1abc9c;
+}
+.header-item:not(:last-child){
+    margin-right: 38px;
+}
+/*product block */
+.featured-products{
+    margin-bottom: 100px;
+}
+.product-heading{
+    display: block;
+    margin: 0 auto 92px;
+    text-transform: uppercase;
+    font-size: 48px;
+    color: #515151;
+    font-weight: 900;
+    width: 500px;
+
+}
+.product-heading::after{
+    display: block;
+    background-color: rgb(26, 188, 156);
+    width: 164px;
+    height: 7px;  
+    content:''; 
+    margin: 28px auto 0; 
+} 
+.product-item{
+    width: 256px;
+    float: left;
+}
+.product-item:not(:nth-child(4n)){
+    margin-right: 32px;
+}
+.product-item:not(:nth-last-child(-n + 4)){
+    margin-bottom: 32px;
+}
+.product-item:hover{
+    cursor: pointer;
+}
+.product-item:hover .product-name{
+    background-color: #1abc9c;  
+}
+.product-item:hover .product-price{
+    background-color: #9de1d3;
+}
+.product-name{
+    margin: 0;
+    clear: left;
+    float: left;
+    width: 200px;
+    background-color: #323232;
+    color: #fff;
+    font-size: 18px;
+    line-height: 32px;
+    padding: 8px 14px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.product-price{
+    margin: 0;
+    float: left;
+    width: 56px;
+    background-color: #8c8c8c;
+    color: #fff;
+    font-size: 18px;
+    line-height: 32px;
+    padding: 8px 12px;
+    font-weight: 900;
+}   
+/* news block */
+.news-heading{
+    display: block;
+    margin: 0 auto 92px;
+    text-transform: uppercase;
+    font-size: 48px;
+    color: #515151;
+    font-weight: 900;
+    width: 320px;
+}
+.news-heading::after{
+    display: block;
+    background-color: rgb(26, 188, 156);
+    width: 164px;
+    height: 7px;  
+    content:''; 
+    margin: 28px auto 0; 
+}
+.news-item{
+    width: 350px;
+    float: left;
+}
+.news-item:not(:last-child){
+    margin-right: 34px;
+}
+h3{
+    font-family: 'Open Sans', sans-serif;
+    color: #525252;
+    font-size: 18px;
+    margin: 10px 0 26px;
+}
+h3:after{
+    display: block;
+    background-color: rgb(26, 188, 156);
+    width: 136px;
+    height: 3px;  
+    content:''; 
+    margin-top: 10px;
+}
+.news-text{
+    line-height: 26px;
+    color: #525252;
+    margin:0 0 14px;
+    padding: 0;
+}
+button{
+    border: none;
+    background-color: rgb(78, 198, 171);
+    width: 159px;
+    height: 51px;
+    min-height: 51px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 80px;
+}
