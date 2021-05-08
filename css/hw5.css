@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  /* task1 */
+.task1-box{
+    width: 100%;
+    height: 600px;
+    background-image:linear-gradient(90deg, rgba(241, 39, 17, 0.3), rgba(245, 175, 25,0.3)), url(../img/kenneth-hargrave-GjsWjLCIh5I-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* task2 */
+.task2-box{
+    position: relative;
+    height: 400px;
+}
+.task2-block{
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 400px;
+    height: 400px;
+    background-color: #424242;
+}
+.child{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+.block1{
+    background-color: rgb(252, 186, 3);
+}
+.block2{
+    background-color:rgb(45, 140, 184);
+    left: 150px;
+}
+.block3{
+    background-color: rgb(252, 61, 3);
+    right: 0;
+}
+.block4{
+    background-color: rgb(186, 230, 208);
+    top: 150px;
+}
+.block5{
+    background-color: rgb(129, 116, 207);
+    top: 150px;
+    left: 150px;
+}
+.block6{
+    background-color: rgb(207, 116, 207);
+    right: 0;
+    top: 150px;
+}
+.child:nth-last-child(-n+3){
+    bottom: 0px;
+}
+.block7{
+    background-color: rgb(247, 94, 171);
+}
+.block8{
+    background-color: rgb(37, 122, 108);
+    left: 150px;
+}
+.block9{
+    background-color: rgb(207, 209, 209);
+    right: 0;
+}
+/*task3*/
+.task3-box{
+    background-image: linear-gradient(90deg, rgb(22, 34, 42), rgb(58, 96, 115));
+    height: 300px;
+}
+.menu{
+    list-style: none;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.menu-item{
+    display: inline-block;
+    position: relative;
+}
+.menu-item>a, .submenu-item>a{
+    text-decoration: none;
+    background-color:#fff;
+    padding: 15px 30px;
+    display: inline-block;
+    color: #000;
+}
+.menu-item > a:hover,
+.submenu-item > a:hover{
+  background: #E91E63;
+  color: #ffffff;
+}
+.submenu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    list-style: none;
+}
+.menu-item:hover .submenu{
+    display: block;
+}
+.submenu-item {
+    white-space: nowrap;
+  }
