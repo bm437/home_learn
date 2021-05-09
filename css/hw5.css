@@ -248,13 +248,44 @@ img{
     background-image: url(../img/hover-icons/reminder.png);  
 }
 .add-to-card{
-    width: 164px;
+    width: 166px;
     height: 48px;
+    font-size: 14px;
+    line-height: 32px;
     background-color: rgb(50, 50, 50);
     border: 1px solid rgb(255, 255, 255);
     text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    vertical-align: middle;
+    padding:10px 13px;
+}
+.add-to-card::before{
+    display: inline-block;
+    vertical-align: middle;
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/hover-icons/basket.png);
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    content: '';
 }
 
+
+. {
+    font-size: 30px;
+    font-family: "Pe";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.067;
+    position: absolute;
+    left: 587.448px;
+    top: 1130.828px;
+    width: 28px;
+    height: 27px;
+    z-index: 40;
+  }
+  
 
 
   
